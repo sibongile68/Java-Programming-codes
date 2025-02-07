@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Amanda
+ */
+public class Vehicle {
+     
+    
+   public  String car,Truck,Motocycle;
+    
+    
+    class Car extends Vehicle{
+    public void DisplayCar(){
+    System.out.println("TOYOTA");
+    }
+    }
+    
+    class Truck extends Vehicle{
+    public void DisplayTrusck(){
+    System.out.println("NGULULU");
+    }
+    }
+    
+    class Motocycle extends Vehicle{
+    public void DisplayMotocycle(){
+    System.out.println("SPORT BIKE");
+    }
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Vehicle obj=new Vehicle();
+        obj.Truck="ARAMEX";
+        obj.Motocycle="FOOREST BIKE";
+        obj.car="MINI COOPER";
+        System.out.println(obj.Motocycle);
+        System.out.println(obj.Truck);
+        System.out.println(obj.car);
+        
+       
+    }
+    
+}
